@@ -9,12 +9,18 @@
   "author": "Julius Pedersen",
   "license": "MIT",
   "dependencies": {
+    "@tuuturu/sane-redis-wrapper": "0.0.2",
+    "axios": "^0.19.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-jwt": "^5.3.1",
-    "jwks-rsa": "^1.6.2",
-    "morgan": "^1.9.1",
-    "axios": "^0.19.2"
+    "jwks-rsa": "^1.7.0",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "csv-parse": "^4.8.8"
   }
 }
