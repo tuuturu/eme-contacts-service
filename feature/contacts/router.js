@@ -73,26 +73,4 @@ router.delete('/:id', async (req, res) => {
 	res.status(200).end()
 })
 
-router.post('/batch', async (req, res) => {
-	const contactsRepository = await getContactsRepository()
-
-	const contacts = req.body
-
-	try {
-		const operations = []
-
-		for (let contact of contacts)
-			operations.push(contactsRepository.set(contact.id, contact))
-
-		await Promise.all(operations)
-	}
-	catch (error) {
-		console.error(error)
-
-		return res.status(500).end()
-	}
-
-	res.status(200).end()
-})
-
 module.exports = router
