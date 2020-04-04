@@ -1,6 +1,6 @@
 {
   "name": "eme-contacts-service",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Contact management microservice",
   "main": "server.js",
   "scripts": {
