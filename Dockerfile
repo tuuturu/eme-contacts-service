@@ -10,6 +10,9 @@ RUN chown node:node /app
 USER node
 
 COPY --chown=node package*.json ./
-RUN npm ci --only=production
+
+# Need to figure out scoped packages inside docker
+# images in github packages
+#RUN npm ci --only=production
 
 COPY --chown=node . .
