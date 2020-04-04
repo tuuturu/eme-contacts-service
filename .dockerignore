@@ -4,4 +4,5 @@ helm-chart/
 makefile
 .env
 .gitignore
+.npmrc
 README.md
