@@ -19,7 +19,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@tuuturu'
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.READ_PKG_TOKEN}}
       - run: npm ci
       #- run: npm test
 
@@ -54,7 +54,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@tuuturu'
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.READ_PKG_TOKEN}}
       - run: npm ci --only=production
 
       - run: echo "::set-env name=RELEASE_VERSION::$(jq -r .version package.json)"
