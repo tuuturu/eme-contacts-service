@@ -18,9 +18,9 @@ jobs:
           always-auth: true
           registry-url: https://npm.pkg.github.com
           scope: '@tuuturu'
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.READ_PKG_TOKEN}}
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       #- run: npm test
 
   bump:
@@ -53,9 +53,9 @@ jobs:
           node-version: '12.x'
           registry-url: https://npm.pkg.github.com
           scope: '@tuuturu'
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.READ_PKG_TOKEN}}
       - run: npm ci --only=production
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - run: echo "::set-env name=RELEASE_VERSION::$(jq -r .version package.json)"
 
