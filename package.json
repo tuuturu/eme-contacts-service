@@ -1,6 +1,6 @@
 {
-  "name": "eme-contacts-service",
-  "version": "0.0.3",
+  "name": "contacts-service",
+  "version": "0.0.9",
   "description": "Contact management microservice",
   "main": "server.js",
   "scripts": {
@@ -16,12 +16,9 @@
   "dependencies": {
     "@tuuturu/sane-redis-wrapper": "0.0.2",
     "axios": "^0.19.2",
-    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "elastic-apm-node": "^3.5.0",
     "express": "^4.17.1",
-    "express-jwt": "^5.3.1",
-    "jwks-rsa": "^1.7.0",
     "morgan": "^1.10.0",
     "nanoid": "^3.0.2"
   },
