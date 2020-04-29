@@ -1,6 +1,6 @@
 {
   "name": "contacts-service",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Contact management microservice",
   "main": "server.js",
   "scripts": {
