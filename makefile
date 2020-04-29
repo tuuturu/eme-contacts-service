@@ -24,4 +24,5 @@ release: bump build-image push-image ## Bump, build a docker image and push it t
 	@echo "🚀 Release is ready for deploy"
 
 run: ## Run the service locally
+	@docker-compose up -d
 	npx nodemon server.js

@@ -14,7 +14,7 @@
     "url": "https://github.com/tuuturu/eme-contacts-service"
   },
   "dependencies": {
-    "@tuuturu/sane-redis-wrapper": "0.0.4",
+    "@tuuturu/toolbox-node": "0.0.4",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "elastic-apm-node": "^3.5.0",
@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.3",
-    "csv-parse": "^4.8.9"
+    "csv-parse": "^4.9.0"
   }
 }
